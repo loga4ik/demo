@@ -1,0 +1,26 @@
+#form {
+  background-image: url("/web/img/img1.jpg");
+  padding: 2rem;
+}
+.invalid-feedback {
+  animation: feedback 0.5s ease-out;
+}
+@keyframes feedback {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.is-invalid {
+  animation: invalid 0.5s ease-out;
+}
+@keyframes invalid {
+  0% {
+    border-color: greenyellow;
+  }
+  100% {
+    border-color: red;
+  }
+}
